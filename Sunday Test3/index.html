@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+
+        .navbar {
+            position: fixed;
+            top: 0px;
+            background-color: white;
+            width: 100%;
+            box-shadow: rgba(0px, 0px, 8px, alpha)
+        }
+        ul {
+            list-style-type: none;
+            font-weight: 800;
+            margin-top: 0px;
+        }
+        li {
+            float: left;
+        }
+        li a {
+            display: block;
+            padding: 25px;
+            background-color: white;
+            text-decoration: none;
+            color: black;
+        }
+
+        .container {
+            width: 100%;
+            margin: 2% 0%;
+            padding: 6% 0%;
+            
+        }
+
+        .banner {
+            display: grid;
+            grid-template-columns: repeat(2, 50%);
+            background-color: gray;
+            
+        }
+
+        .banner .image img{
+            width: 100%;
+        }
+
+        .banner .content .title {
+            font-size: 40px;
+        }
+        .banner .content .title span {
+            font-weight: 600;
+        }
+        .banner .content .desc {
+            font-size: 30px;
+        }
+        .banner .content .btn {
+            background-color: rgb(12, 73, 53);
+            color: white;
+            font-size: 16px;
+            padding: 2% 5%;
+            border-radius: 30px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .about {
+            display: grid;
+            grid-template-columns:repeat(2, 50%)
+        }
+        .about .image img {
+            width: 80%;
+        }
+        .about .content {
+            font-family: sans-serif;
+            padding: 20% 13%;
+        }
+        .about .content .title {
+            font-size: 28px;
+            font-weight: 700;
+        }
+        .about .content .desc {
+            font-size: 19px;
+        }
+
+        .card {
+            display: grid;
+            grid-template-columns: repeat(4, 15%);
+            width: 100%;
+            justify-content: center;
+            grid-column-gap: 20px;
+            grid-row-gap: 10px;
+            background-color: rgb(31, 62, 123);
+        }
+
+        .item-1 {
+            border: solid black;
+            background-color: white;
+            height: 30px;
+            border-radius: 10px;
+            text-align: center;
+            padding-top: 5px;
+            font-size: 19px;
+           
+            
+            
+           
+        }
+        .item-2 {
+            border: solid black;
+            background-color: white;
+            height: 30px;
+            border-radius: 10px;
+            text-align: center;
+            padding-top: 5px;
+            font-size: 19px;
+
+        }
+        .item-3 {
+            border: solid black;
+            background-color: white;
+            height: 30px;
+            border-radius: 10px;
+            text-align:center ;
+            padding-top: 5px;
+            font-size: 19px;
+        }
+        .item-4 {
+            border: solid black;
+            background-color: white;
+            height: 30px;
+            border-radius: 10px;
+            text-align: center;
+            padding-top: 5px;
+            font-size: 19px;
+        }
+        .footer {
+            background-color: rgb(75, 75, 168);
+            height: 30vh;
+          
+        }
+        .footer .title {
+            text-align: center;
+            padding-top: 40px;
+            font-size: x-large;
+        }
+
+        .skills .content {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 2% 10%;
+            background-color: rgb(73, 73, 211);
+        }
+        .skills .content .tittle {
+            font-size: 30px;
+            font-weight: 800;
+           text-align: center;
+        }
+
+        .skills .grid-container {
+            display: grid;
+            grid-template-columns: repeat(5, 20%);
+            grid-gap: 10px 20px;
+            margin-right: 4%;
+        }
+        
+        .skills .grid-container .grid-item {
+            border: 1px solid #ddd;
+            background: #fff;
+            border-bottom: 5px solid #351b95;
+            padding: 7% 6%;
+            border-radius: 8px;
+        }
+
+        .fa-brands {
+            margin-right: 8%;
+            font-size: 20px;
+        }
+         
+        .contact {
+            display: grid;
+            grid-template-columns: repeat(2, 50%);
+        }
+        .contact .content {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 10% 13%;
+        }
+        .contact .content .title {
+            font-size: 28px;
+            font-weight: 800;
+        }
+        .contact .content .form .field{
+            padding: 2% 0%;
+        }
+        .contact .content .form .title {
+            font-size: 16px;
+        }
+
+        .contact .content .form .input {
+            font-size: 16px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            width: 55%;
+            padding: 2% 1%;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-top: 2%;
+
+        }
+
+        .footer {
+            background-color: #4e38a1;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            color: #fff;
+            padding: 2% 0%;
+        }
+
+        .footer .social-sites .footer-icon a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 12px;
+            font-size: 20px;
+        }
+        ul li a:hover {
+            background-color: #4e38a1;
+            color: black;
+        }
+        ul li a {
+            transition: 0.6s ease;
+        }
+        .skills .grid-container .grid-item:hover {
+            background-color: aquamarine;
+            color: black;
+        }
+        .skills .grid-container .grid-item {
+            transition: 0.6s ease;
+        }
+      
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <!--nav section-->
+
+        <div class="navbar">
+            <ul>
+
+          <li> <a href="#Home">Home</a> </li>
+          <li>  <a href="#About">About</a> </li>
+          <li>  <a href="#Skills">Skills</a> </li>
+           <li> <a href="#Work">Work</a> </li>
+         <li>  <a href="#Contact">Contact</a>  </li>
+            </ul>
+
+            
+        </div>
+
+        <!--banner section-->
+
+        <div class="container banner">
+        <div class="img">
+            <img src="https://img.freepik.com/free-photo/rear-view-programmer-working-all-night-long_1098-18697.jpg?w=900&t=st=1651859600~exp=1651860200~hmac=8e9b76831bf4b6a78a77f0c8b22d1c781fba9fc9525c2f4142aadd18f77fa65e" 
+            width="600px" alt=""/>
+        </div>
+
+        <div class="content">
+            <p class="title">Hey! I'm <span>Kumar Ratnesh</span></p>
+            <p class="desc">I am a Software Developer</p>
+            <button class="btn" href="#about">About</button>
+        </div>
+        </div>
+
+        <!--about section-->
+
+
+        <div class="container about">
+           
+            <div class="content">
+                <p class="title">About Me</p>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                
+            </div>
+            <div class="img">
+                <img src="https://img.freepik.com/free-vector/web-development-programming-languages-css-html-it-ui-programmer-cartoon-character-developing-website-coding-flat-illustration-banner_128772-1167.jpg?w=826" 
+                width="600px" alt=""/>
+            </div>
+            </div>
+
+            <!--Skills section-->
+
+         <div class="container skills">
+
+            <div class="content">
+                <p class="tittle">Skills</p>
+                <div class="grid-container">
+                    <div class="grid-item"><i class="fa-brands fa-html5"></i>HTML</div>
+                    <div class="grid-item"><i class="fa-brands fa-css3"></i>CSS</div>
+                    <div class="grid-item"><i class="fa-brands fa-bootstrap"></i>BOOTSTRAP</div>
+                    <div class="grid-item"><i class="fa-brands fa-js"></i>JAVASCRIPT</div>
+                    <div  class="grid-item"><i class="fa-brands fa-node-js"></i>NODE JS</div>
+                
+                </div>
+            </div>
+
+         </div>
+
+            <!--contact section-->
+
+            <div class="container contact">
+
+                
+                    <div class="image">
+                        <img src="https://img.freepik.com/free-vector/pair-programming-concept-illustration_114360-3941.jpg?t=st=1651922894~exp=1651923494~hmac=7372b098a9eef40d88b850368147384c3d6769c09b113048eae4122e5dd58471&w=900" 
+                        width="600px" alt=""/>
+                    </div>
+            
+                    <div class="content">
+                        <p class="title">Get in touch with me here!</p>
+                        
+                        <form action="#" class="form">
+                            <div class="field">
+                                <label for="email" class="title">Email ID:</label>
+                                <input type="email" id="email" name="email" value="Enter your email" class="input">
+                            </div>
+                            <div class="field">
+                                <label for="message" class="title">Message:</label><br>
+                                <textarea name="Message" id="message" cols="30" rows="10" class="input"></textarea>
+                            </div>
+
+                            <input type="submit" value="submit" class="btn">
+                        </form>
+                       
+                    </div>
+                    
+
+            </div>
+
+            <!--footer section-->
+
+            <div class="footer">
+                <div class="footer-title">
+                    <h2>Kumar Ratnesh</h2>
+                </div>
+                <div class="social-sites">
+                    <div class="footer-icon">
+                        <a href="#" class="icon"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                        <p>  ©  2022 all right reserved</p>
+                    </div>
+                </div>
+            </div>
+
+           
+    </div>
+</body>
+</html>
